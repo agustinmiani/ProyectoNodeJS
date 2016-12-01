@@ -7,4 +7,4 @@ server.on("request", function (req, res) {
     res.end(date.toDateString());
 });
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54ffbb9f-3f71-43aa-8e2a-cf7d3ee72527" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTTP.js" afterPath="$PROJECT_DIR$/HTTP.js" />
     </list>
     <ignored path="CursoNodeGit.iws" />
@@ -49,8 +48,8 @@
       <file leaf-file-name="HTTP.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTTP.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -264,12 +263,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480603732286</updated>
       <workItem from="1480603733485" duration="1956000" />
-      <workItem from="1480612264707" duration="36000" />
+      <workItem from="1480612264707" duration="175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1992000" />
+    <option name="totallyTimeSpent" value="2131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -381,8 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTTP.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>
