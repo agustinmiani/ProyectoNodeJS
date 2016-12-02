@@ -3,11 +3,6 @@ var http = require("http");
 var server = http.createServer();
 var url = require("url");
 
-var index = fs.readFileSync('public/index.html','utf8',function(err,data){
-	if(err) {
-		return console.log(err);
-	}
-});
 
 server.on("request", function(req,res){
 	var urlData=url.parse(req.url);
@@ -18,7 +13,12 @@ server.on("request", function(req,res){
 			fs.readFile(filePath, function(err,data){
 				if (err){
 					res.writeHead(500);
-					res.end("404 NOT FOUND, Especifique la ruta correcta")
+					if (path=="/"){
+						filePath = "public/index.html";
+						fs.readFile(filePath, function(err,data){
+							res.end(data);
+						})
+					}
 				}else{
 					res.end(data);
 				}
