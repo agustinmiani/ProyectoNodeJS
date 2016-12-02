@@ -18,7 +18,7 @@ server.on("request", function(req,res){
 			fs.readFile(filePath, function(err,data){
 				if (err){
 					res.writeHead(500);
-					res.end("Ha ocurrido algo malo")
+					res.end("404 NOT FOUND, Especifique la ruta correcta")
 				}else{
 					res.end(data);
 				}
