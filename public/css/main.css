@@ -1,0 +1,109 @@
+
+body {
+	background-color: #333;
+}
+
+
+header {
+	background-color: darkslategray;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	border: 1px dashed white;
+}
+
+header #logo {
+	text-align: center;
+}
+
+header .logo img {
+	border: 3px solid blue;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+
+content{
+	background-color: #fff;
+}
+
+footer {
+	background-color: red;
+}
+
+.articulo{
+	background-color: gray;
+	border: 1px dashed white;
+}
+
+#logo {
+
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border: 1px solid #111111;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+.articulo a:hover:not(.active) {
+	background-color: #111;
+}
+
+input[type=text] {
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+	width: 40%;
+}
+
+#paraclick {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+
+
+

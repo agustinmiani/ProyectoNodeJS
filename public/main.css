@@ -1,0 +1,29 @@
+
+body {
+	background-color: #333;
+}
+
+header {
+	background-color: #44121;
+}
+
+header #logo {
+	text-align: center;
+}
+
+header #logo img {
+	border: 3px solid blue;
+}
+
+content{
+	background-color: #fff;
+}
+
+footer {
+	background-color: red;
+}
+
+#logo {
+
+}
+

@@ -1,9 +1,33 @@
-setTimeout(function(){
-	console.log("Pase el time");
-}, 1000);
+var fs = require('fs');
+var http = require("http");
+var server = http.createServer();
+var url = require("url");
 
+var index = fs.readFileSync('public/index.html','utf8',function(err,data){
+	if(err) {
+		return console.log(err);
+	}
+});
 
-setInterval(function(){
-	console.log("Pase el Interval");
-}, 1000);
+server.on("request", function(req,res){
+	var urlData=url.parse(req.url);
+	var path = urlData.pathname;
+	var filePath= "public"+path;
+	fs.exists(filePath,function(exists){
+		if(exists){
+			fs.readFile(filePath, function(err,data){
+				if (err){
+					res.writeHead(500);
+					res.end("Ha ocurrido algo malo")
+				}else{
+					res.end(data);
+				}
+			})
+		}else {
+			res.writeHead(404);
+			res.end("No existe")
+		}
+	});
+});
 
+server.listen(process.env.PORT || 3000);
