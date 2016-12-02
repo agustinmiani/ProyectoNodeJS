@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Infobae - Curso</title>
+	<title>{{title}}</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--<link href="../public/css/main.css" rel="stylesheet">-->
 	<link href="css/main.css" rel="stylesheet">
 	<script type="text/javascript" src="js/main.js"></script>
     <script
@@ -45,7 +46,7 @@
 
 		<article id="articulo0" class="articulo">
 			<h1>TOP 1 Noticia Deportes</h1>
-			<a href="../../../Desktop/public/noticia.html">Argentina Campeon</a>
+			<a href="noticia.html">Argentina Campeon</a>
 
 		</article>
 
@@ -57,6 +58,15 @@
 			<h1>Titulo 2</h1>
 		</article>
 
+		<!--Aca estoy iterando las noticias-->
+		{{#noticias}}
+		<article class="articulo">
+			<h1>{{titulo}}</h1>
+			<h4>{{contenido}}</h4>
+
+		</article>
+		{{/noticias}}
+
 	</div>
 
 
@@ -65,7 +75,7 @@
 	<p id="demo"></p>
 
 	<footer>
-		<!--<div id="numero" ><p>hola</p></div>-->
+		<div id="numero" ><p>hola</p></div>
 	</footer>
 	
 </body>
