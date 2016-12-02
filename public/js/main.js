@@ -64,13 +64,13 @@ Articulo.prototype.render = function (i) {
 
     if(this.link == true) {
         if(expandir == false) {
-            document.getElementById('articulo' + i).innerHTML = '<article><div><a onclick="abrirNoticia(\'' + this.id + '\')">' + this.getTitulo() + this.id + '</a></div><div><p>' + this.getContenido() + '</p></div> </article>';
+            document.getElementById('articulo' + i).innerHTML = '<div class="container" style="float: left; border: 1px solid gray ; height: 200px; width: 200px;"><div style="height: 20px;"><div ><a onclick="abrirNoticia(\'' + this.id + '\')">' + this.getTitulo() + this.id + '</a></div><div><p>' + this.getContenido() + '</p></div> </div>';
         }
         else{
-            document.getElementById('articulo' + i).innerHTML = '<article><div><a onclick="expandirNoticia(\'' + this.id + '\')">' + this.getTitulo() + this.id + '</a></div><div><p>' + this.getContenido() + '</p></div> </article>';
+            document.getElementById('articulo' + i).innerHTML = '<div class="container" style="border: 1px solid gray ; height: 200px; width: 200px;"><div class="caption" style="height: 20px;"><div><a onclick="expandirNoticia(\'' + this.id + '\')">' + this.getTitulo() + this.id + '</a></div><div><p>' + this.getContenido() + '</p></div> </div>';
         }
     }else{
-        document.getElementById('articulo' + i).innerHTML = '<article><div><h1>' + this.getTitulo() + '</h1></div><div><p>' + this.getContenido() + '</p></div> </article>';
+        document.getElementById('articulo' + i).innerHTML = '<div  class="container" style="  border: 1px solid gray ; height: 200px; width: 200px;"><div class="col-xs-12 col-sm-6 col-md-3" style="height: 20px;"><div><h1>' + this.getTitulo() + '</h1></div><div><p>' + this.getContenido() + '</p></div> </div>';
     }
 };
 
@@ -81,14 +81,14 @@ function abrirNoticia (id){
 
 function expandirNoticia (id){
     aux = Articulos.articulos[id];
-    document.getElementById('articulo' + id).innerHTML = '<article><div><a onclick="expandirNoticia(\'' + this.id + '\')">' + aux.titulo + this.id + '</a></div><div><p>' + aux.contenido + '</p><br>' +
-        '<p>'+aux.extra+'</p></div> </article> <br>' +
-        '<a onclick="contraerNoticia(\'' + aux.id + '\')"> Contraer</a>';
+    document.getElementById('articulo' + id).innerHTML = '<article style="border: 1px solid gray; height: 200px; width: 200px "><div style="height: 20px;"><a onclick="expandirNoticia(\'' + this.id + '\')">' + aux.titulo + this.id + '</a></div><div><p>' + aux.contenido + '</p><br>' +
+        '<p>'+aux.extra+'</p></div> <br>' +
+        '<a onclick="contraerNoticia(\'' + aux.id + '\')"> Contraer</a> </article>';
 }
 
 function contraerNoticia (id){
     aux = Articulos.articulos[id];
-    document.getElementById('articulo'+ id).innerHTML = '<article><div><a onclick="expandirNoticia(\'' + aux.id + '\')">' + aux.getTitulo() + aux.id + '</a></div><div><p>' + aux.getContenido() + '</p></div> </article>';
+    document.getElementById('articulo'+ id).innerHTML = '<article style="border: 1px solid gray ; height: 200px; width: 200px "><div style="height: 20px;"><div><a onclick="expandirNoticia(\'' + aux.id + '\')">' + aux.getTitulo() + aux.id + '</a></div><div><p>' + aux.getContenido() + '</p></div> </article>';
 }
 
 

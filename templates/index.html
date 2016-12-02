@@ -14,32 +14,34 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
-		<img src="images/logo.png" alt="Logo of the site">
-		<br />
-		Infobae
-		</div>
-
-
 		<div >
 			<ul class="nav nav-pills nav-justified">
 				<!--<li> <a href="index.html"> Home </a></li>
 				<li> <a href="index.html"> Politica </a></li>
 				<li> <a href="index.html"> Deportes </a></li>
 -->
-			<li ><a href="#index.html" >Home</a></li>
-			<li class="active"><a href="#index.html">Politica</a></li>
-			<li class="active"><a href="#index.html">Deportes</a></li>
+			<li ><a href="#index.html" class="head-item">Home</a></li>
+			<li ><a href="#index.html" class="head-item">Politica</a></li>
+			<li ><a href="#index.html" class="head-item">Deportes</a></li>
 
-				<form style="float:inherit" class="active">
-					Buscar<input type="text" name="search" placeholder="Search..">
-				</form>
+
 			</ul>
 
 		</div>
-	</header>
+		<br>
+		<div class="logo">
+			<img src="images/logo.png" alt="Logo of the site">
+			<br>
+			<br>
+			<form style="float:inherit" class="active">
+				<input type="text" name="search" placeholder="Search..">
+			</form>
+		</div>
 
-	<div id="articulos" class="articulos">
+	</header>
+	<br>
+	<br>
+	<div id="articulos" class="row">
 
 		<article id="articulo0" class="articulo">
 			<h1>TOP 1 Noticia Deportes</h1>
@@ -58,12 +60,12 @@
 	</div>
 
 
-	<button id="paraclick" onclick="myFunction()">Click me</button>
+	<!--<button id="paraclick" onclick="myFunction()">Click me</button>-->
 
 	<p id="demo"></p>
 
 	<footer>
-		<div id="numero" ><p>hola</p></div>
+		<!--<div id="numero" ><p>hola</p></div>-->
 	</footer>
 	
 </body>

@@ -1,13 +1,12 @@
 
 body {
-	background-color: #333;
+	background-color: white;
 }
 
 
 header {
-	background-color: darkslategray;
+	background-color: white;
 	text-align: center;
-	font-family: "Comic Sans MS";
 	border: 1px dashed white;
 }
 
@@ -16,27 +15,17 @@ header #logo {
 }
 
 header .logo img {
-	border: 3px solid blue;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
+	height: 60px;
 }
 
 
 content{
-	background-color: #fff;
+	background-color: white;
 }
 
-footer {
-	background-color: red;
-}
 
-.articulo{
-	background-color: gray;
-	border: 1px dashed white;
-}
-
-#logo {
-
+.container{
+	float: left;
 }
 
 ul {
@@ -44,32 +33,33 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: orange;
 }
+
 
 li {
 	float: left;
 }
 
-li a {
+.head-item {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	border: 1px solid #111111;
 }
 
-li a:hover:not(.active) {
-	background-color: #111;
+.head-item:hover:not(.active) {
+	color: #636363;
+	background-color: transparent;
 }
 
 .active {
-	background-color: #4CAF50;
+	color: #111;
 }
 
-.articulo a:hover:not(.active) {
-	background-color: #111;
+.article a:hover:not(.active) {
+	color: #111;
 }
 
 input[type=text] {
@@ -91,7 +81,6 @@ input[type=text]:focus {
 }
 
 #paraclick {
-	background-color: #4CAF50; /* Green */
 	border: none;
 	color: white;
 	padding: 15px 32px;
