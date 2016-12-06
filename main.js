@@ -36,7 +36,11 @@ app.get("/posts/:id", function(req, res){
 });
 
 app.put("/posts/:id", function(req, res){
-
+  body = require('body-parser');
+  app.use(body.json());
+  app.use(body.urlencoded({     // to support URL-encoded bodies
+    extended: true
+  }));
 });
 
 app.post("/posts/:id",function(req, res){
@@ -51,5 +55,6 @@ app.delete("/posts/:id", function(req, res){
   res.writeHead(200);
   res.end(posts.get());
 });
+
 
 app.listen(3000);

@@ -92,6 +92,13 @@ input[type=text]:focus {
 	border-radius: 50%;
 }
 
+.articulo {
+	float: left;
+	border: 1px solid gray;
+	height: 200px;
+	width: 200px;
+}
+
 
 
 
